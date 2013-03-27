@@ -1,0 +1,16 @@
+markdown: rdiscount
+pygments: true
+permalink: /posts/:title
+auto: true
+future: false
+rdiscount:
+  extensions: [smart]
+
+name: Matt Yoho
+url: http://mattyoho.com
+description: Wholesale optimism distributor.
+twitter: mattyoho
+github: mattyoho
+gravatar_url: http://www.gravatar.com/avatar/52ee95ca6e345d86a414741dccaa6dce
+email: mby@mattyoho.com
+email_base64: bWJ5QG1hdHR5b2hvLmNvbQ==

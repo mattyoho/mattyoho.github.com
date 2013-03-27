@@ -1,0 +1,37 @@
+---
+layout: layout
+---
+
+<article>
+  <header>
+    <h1>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </h1>
+  </header>
+
+  <section class="dateline">
+    <time pubdate data-timestamp="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %B, %Y" }}</time>
+  </section>
+
+  {{ content }}
+
+  <section class="meta">
+    <section class="mini-bio">
+      <img src="{{ site.gravatar_url }}?s=142" height="50" width="50" />
+      <p>
+        I love Ruby and JavaScript, comic books, and sweet potato fries. Sometimes I say things.
+      </p>
+    </section>
+    <ul class="social-links">
+      <li class="twitter">
+        <a href="https://twitter.com/{{ site.twitter }}">Find me on Twitter</a>.
+      </li>
+      <li class="github">
+        <a href="https://github.com/{{ site.github }}">I write code at GitHub</a>.
+      </li>
+      <li class="email">
+        <a href="mailto:" class="js-base64-email" data-base64-email="{{ site.email_base64 }}">Take this to the inbox</a>.
+      </li>
+    </ul>
+  </section>
+</article>
