@@ -1,10 +1,9 @@
-markdown: rdiscount
-pygments: true
+markdown: kramdown
+highlighter: pygments
 permalink: /posts/:title
-auto: true
 future: false
-rdiscount:
-  extensions: [smart]
+kramdown:
+  gfm: true
 
 name: Matt Yoho
 url: http://mattyoho.com
