@@ -25,30 +25,27 @@
   </head>
 
   <body>
-    <header>
-      <h1><a href="/">@{{ site.github }}</a></h1>
-    </header>
-    <section class="content">
-      {{ content }}
-    </section>
-    <nav>
-      <!-- <section class="name"> -->
-      <!--   <a href="/"> -->
-      <!--     <span>@{{ site.github }}</span> -->
-      <!--   </a> -->
-      <!-- </section> -->
-      <section class="meta">
-        <a href="https://github.com/{{ site.github }}" target="_blank">github</a>
-        <a href="https://twitter.com/{{ site.twitter }}" target="_blank">twitter</a>
-        <a href="https://instagram.com/{{ site.instagram }}" target="_blank">instagram</a>
-        <a href="mailto:" class="js-base64-email" data-base64-email="{{ site.email_base64 }}">contact</a>
-        <!-- <a href="/atom.xml"><img src="/images/rss.png" /></a> -->
+    <section class="page">
+      <header class="masthead">
+        <!-- <h3><a href="/" title="home">@mattyoho</a></h3> -->
+        <!-- <nav> -->
+        <!--   <ul class="meta"> -->
+        <!--     <li>@<a href="https://github.com/{{ site.github }}" title="@mattyoho">github</a></li> -->
+        <!--     <li>@<a href="https://twitter.com/{{ site.twitter }}" title="@mattyoho">twitter</a></li> -->
+        <!--     <li>@<a href="https://instagram.com/{{ site.instagram }}" title="@mattyoho">instagram</a></li> -->
+        <!--     <a href="/atom.xml"><img src="/images/rss.png" /></a> -->
+        <!--   </ul> -->
+        <!--   <section class="sections"> -->
+        <!--     <ul> -->
+        <!--       <li><a href="/posts.html">posts</a></li> -->
+        <!--     </ul> -->
+        <!--   </section> -->
+        <!-- </nav> -->
+        <div class="circular-avatar"><img src="images/avatar.jpg" alt="Matt Yoho near Fisherman's Warf, San Francisco in 2009." /></div>
+      </header>
+      <section class="content">
+        {{ content }}
       </section>
-      <!-- <section class="sections"> -->
-      <!--   <ul> -->
-      <!--     <li><a href="/posts.html">posts</a></li> -->
-      <!--   </ul> -->
-      <!-- </section> -->
-    </nav>
+    </section>
   </body>
 </html>
