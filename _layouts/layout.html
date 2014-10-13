@@ -25,18 +25,18 @@
   </head>
 
   <body>
+    <header>
+      <h1><a href="/">@{{ site.github }}</a></h1>
+    </header>
     <section class="content">
       {{ content }}
     </section>
     <nav>
-      <!--
-      <section class="name">
-        <a href="/">
-          <span id="fname">{{ site.name|split:' '|first }}</span>
-          <span id="lname">{{ site.name|split:' '|last }}</span>
-        </a>
-      </section>
-      -->
+      <!-- <section class="name"> -->
+      <!--   <a href="/"> -->
+      <!--     <span>@{{ site.github }}</span> -->
+      <!--   </a> -->
+      <!-- </section> -->
       <section class="meta">
         <a href="https://github.com/{{ site.github }}" target="_blank"><img src="/images/github.png" /></a>
         <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><img src="/images/twitter.png"></a>
